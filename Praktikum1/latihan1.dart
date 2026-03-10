@@ -1,12 +1,10 @@
 void main() {
-  // 1 & 2: Inisialisasi variabel dengan tipe data yang tepat
   String nama = "Electra Seafood";
   int tahunDidirikan = 2023;
   String pemilik = "Mbok Yem";
   String alamat = "JL. Prof. Soedarto, SH, Tembalang";
-  bool statusBuka = true; // true untuk Buka, false untuk Tutup
+  bool statusBuka = true;
 
-  // Menggunakan Map untuk Daftar Makanan dan Minuman
   Map<String, int> daftarMakanan = {
     'Kepiting Rebus': 40000,
     'Nasi Goreng': 20000,
@@ -20,7 +18,6 @@ void main() {
     'Es Jus': 6000,
   };
 
-  // 3: Cetak data restoran
   print('--- DATA RESTORAN ---');
   print('Nama            : $nama');
   print('Tahun Didirikan : $tahunDidirikan');
@@ -28,7 +25,7 @@ void main() {
   print('Alamat          : $alamat');
   print('Status Buka     : ${statusBuka ? "Buka" : "Tutup"}');
   print('\n--- DAFTAR MAKANAN ---');
-  daftarMakanan.forEach((key, value) => print('- $key ($value rb)'));
+  daftarMakanan.forEach((key, value) => print('- $key ($value)'));
   print('\n--- DAFTAR MINUMAN ---');
-  daftarMinuman.forEach((key, value) => print('- $key ($value rb)'));
+  daftarMinuman.forEach((key, value) => print('- $key ($value)'));
 }
