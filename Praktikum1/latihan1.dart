@@ -3,7 +3,7 @@ void main() {
   int tahunDidirikan = 2023;
   String pemilik = "Mbok Yem";
   String alamat = "JL. Prof. Soedarto, SH, Tembalang";
-  bool statusBuka = true;
+  bool statusBuka = false;
 
   Map<String, int> daftarMakanan = {
     'Kepiting Rebus': 40000,
